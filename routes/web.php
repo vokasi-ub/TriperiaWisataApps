@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('dashboard','DashboardController');
+Route::resource('manageuser','ManageUserController');
+Route::get('destroy/{id}','ManageUserController@destroy');
+Route::post('insert/user','ManageUserController@store');
