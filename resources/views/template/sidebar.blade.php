@@ -3,19 +3,10 @@
                 <li class="user-details cyan darken-2">
                 <div class="row">
                     <div class="col col s4 m4 l4">
-                        <img src="/demo/images/avatar.jpg" alt="" class="circle responsive-img valign profile-image">
+                        <img src="/demo/images/avatar2.png" alt="" class="circle responsive-img valign profile-image">
                     </div>
                     <div class="col col s8 m8 l8">
                         <ul id="profile-dropdown" class="dropdown-content">
-                            <li><a href="#"><i class="mdi-action-face-unlock"></i> Profile</a>
-                            </li>
-                            <li><a href="#"><i class="mdi-action-settings"></i> Settings</a>
-                            </li>
-                            <li><a href="#"><i class="mdi-communication-live-help"></i> Help</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li><a href="#"><i class="mdi-action-lock-outline"></i> Lock</a>
-                            </li>
                             <li><a href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -32,27 +23,25 @@
                     </div>
                 </div>
             </li>
-                <li class="bold active"><a href="index.html" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> Dashboard</a>
-                </li>
-                  <li class="bold"><a href="{{url('manageuser')}}" class="waves-effect waves-cyan"><i class="mdi-social-person"></i> Manage Data User</a>
+                <li class="bold active"><a href="{{url('home')}}" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> Dashboard</a>
                 </li>
                 <li class="no-padding">
                     <ul class="collapsible collapsible-accordion">
                         <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-maps-terrain"></i> Manage Data Wisata</a>
                             <div class="collapsible-body">
                                 <ul>
-                                    <li><a href="layout-fullscreen.html">Kategori Wisata</a>
+                                    <li><a href="{{url('kategori')}}">Kategori Wisata</a>
                                     </li>
-                                    <li><a href="layout-horizontal-menu.html">Data Wisata</a>
+                                    <li><a href="{{url('wisata')}}">Data Wisata</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                     </ul>
                 </li>
-                  <li class="bold"><a href="index.html" class="waves-effect waves-cyan"><i class="mdi-maps-place"></i> Manage Data Wilayah</a>
+                  <li class="bold"><a href="{{url('galeri')}}" class="waves-effect waves-cyan"><i class="mdi-image-photo-library"></i> Manage Data Galeri</a>
                 </li>
-                  <li class="bold"><a href="index.html" class="waves-effect waves-cyan"><i class="mdi-social-notifications-on"></i> Manage Data Events</a>
+                  <li class="bold"><a href="{{url('event')}}" class="waves-effect waves-cyan"><i class="mdi-social-notifications-on"></i> Manage Data Events</a>
                 </li>
 
                 

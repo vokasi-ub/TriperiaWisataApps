@@ -3,7 +3,7 @@
   $('.sa-remove').click(function () {
      var postId = $(this).data('id');
                 swal({
-                title: "are u sure?",
+                title: "abc?",
                 text: "lorem lorem lorem",
                 type: "warning",
                 showCancelButton: true,

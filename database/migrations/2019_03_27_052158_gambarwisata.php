@@ -15,8 +15,11 @@ class Gambarwisata extends Migration
     {
         Schema::create('gambarwisata', function (Blueprint $table) {
             $table->increments('gambarwisataid');
+            $table->string('deskripsinama',100);
               $table->string('gambarwisata',100);
-                $table->integer('wisataid_fk');
+                $table->unsignedBigInteger('wisataid_fk');
+                $table->foreign('wisataid_fk')->references('wisataid')->on('datawisata')
+      ->onDelete('cascade');
          
         });
     }

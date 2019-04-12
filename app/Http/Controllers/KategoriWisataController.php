@@ -3,9 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use App\Kategori;
+use App\Wisata;
 
 class KategoriWisataController extends Controller
 {
+      public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +20,8 @@ class KategoriWisataController extends Controller
      */
     public function index()
     {
-        //
+        $data = Kategori::all();
+       return view('kategori.viewmanagekategori', compact('data'));
     }
 
     /**
@@ -34,7 +42,15 @@ class KategoriWisataController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'namakategori' => 'required'
+          ]);
+
+          $data = new Kategori([
+        'namakategori' => $request->namakategori,
+    ]);
+          $data->save();
+    return redirect('/kategori');
     }
 
     /**
@@ -56,7 +72,9 @@ class KategoriWisataController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data = Wisata::all();
+        $editkategori = Kategori::find($id);
+        return view('kategori.editkategori', compact('editkategori','data'));
     }
 
     /**
@@ -66,9 +84,16 @@ class KategoriWisataController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        $request->validate([
+            'namakategori' => 'required'
+          ]);
+
+        $kategori = Kategori::find($request->id);
+        $kategori->namakategori = $request->namakategori;
+        $kategori->save();
+    return redirect('/kategori');
     }
 
     /**
@@ -79,6 +104,8 @@ class KategoriWisataController extends Controller
      */
     public function destroy($id)
     {
-        //
+       $kategori = Kategori::find($id);
+       $kategori->delete();
+      return redirect('/kategori');
     }
 }

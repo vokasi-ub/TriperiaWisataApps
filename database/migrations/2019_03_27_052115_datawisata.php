@@ -14,13 +14,14 @@ class Datawisata extends Migration
     public function up()
     {
         Schema::create('datawisata', function (Blueprint $table) {
-            $table->increments('wisataid');
+            $table->bigIncrements('wisataid');
             $table->string('namawisata',50);
             $table->text('deskripsiwisata');
             $table->string('gambar',100);
             $table->string('latitude',100);
             $table->string('longitude',100);
-            $table->string('embedmaps',255);
+            $table->text('embedmaps');
+            $table->string('lokasi',255);
             $table->integer('kategoriid_fk');
             $table->integer('wilayahid_fk');
             $table->integer('created_by');
