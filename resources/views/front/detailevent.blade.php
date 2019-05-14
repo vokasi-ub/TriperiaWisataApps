@@ -98,6 +98,11 @@
               <img src="/image/{{ $row->gambar}}" alt="" class="img-fluid">
               <p>{{$row->deskripsi}}</p>
             <div class="tag-widget post-tag-container mb-5 mt-5">
+            <div class="tagcloud">
+                <a href="#" class="tag-cloud-link">Start Event : {{$row->startevent}}</a>
+                <a href="#" class="tag-cloud-link">End Event : {{$row->endevent}}</a>
+  
+              </div>
               <div class="tagcloud">
                 <a href="#" class="tag-cloud-link">Life</a>
                 <a href="#" class="tag-cloud-link">Sport</a>

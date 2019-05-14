@@ -10,7 +10,7 @@ class Events extends Model
     protected $table = 'events';
     protected $primaryKey = 'eventid';
     protected $fillable = [
-    'eventid', 'judulevent', 'juduldeskripsi', 'deskripsi', 'gambar', 'tanggalevent','tanggaleventakhir','created_at', 'updated_at', 'created_by'
+    'eventid', 'judulevent', 'juduldeskripsi', 'deskripsi', 'gambar', 'startevent','endevent','created_at', 'updated_at', 'created_by'
       ];
 
        public function UserAkun()

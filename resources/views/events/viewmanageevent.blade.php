@@ -56,6 +56,19 @@
                           <input id="name4" type="text" name="judulevent" class="validate" required>
                           <label for="first_name">Judul Event</label>
                         </div>
+                        
+                        <div class="input-field col s12">
+                          
+                          <input id="name4" type="date" name="startevent" class="validate" placeholder="start event" required>
+                        
+                        </div>
+                 
+                        <div class="input-field col s12">
+                          
+                          <input id="name4" type="date" name="endevent" class="validate" placeholder="end event" required>
+                         
+                        </div>
+
                           <div class="input-field col s12">
                           
                           <input id="name4" type="text" name="juduldeskripsi" class="validate" required>

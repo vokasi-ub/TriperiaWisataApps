@@ -17,6 +17,8 @@ class Events extends Migration
             $table->increments('eventid');
             $table->string('judulevent',50);
             $table->string('juduldeskripsi',100);
+            $table->string('startevent',100);
+            $table->string('endevent',100);
             $table->text('deskripsi');
             $table->string('gambar',100);
             $table->timestamps();
