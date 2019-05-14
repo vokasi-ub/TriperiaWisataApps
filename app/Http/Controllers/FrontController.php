@@ -32,9 +32,10 @@ class FrontController extends Controller
 
      public function wisata()
     {
-        $pantai = Wisata::where('kategoriid_fk', 'LIKE', '%' . 2 . '%')->get();
-        $gunung = Wisata::where('kategoriid_fk', 'LIKE', '%' . 3 . '%')->get();
-       return view('front.wisata', compact('pantai','gunung'));
+        $pantai = Wisata::where('kategoriid_fk', 'LIKE', '%' . 3 . '%')->get();
+        $gunung = Wisata::where('kategoriid_fk', 'LIKE', '%' . 4 . '%')->get();
+        $lain = Wisata::where('kategoriid_fk', 'LIKE', '%' . 5 . '%')->get();
+       return view('front.wisata', compact('pantai','gunung','lain'));
     }
        public function destination($id)
     {

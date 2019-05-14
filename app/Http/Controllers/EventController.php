@@ -46,8 +46,6 @@ class EventController extends Controller
         'created_by' => $request->created_by,
         'juduldeskripsi' => $request->juduldeskripsi,
         'judulevent' => $request->judulevent,
-        'tanggalevent' => $request->date,
-        'tanggaleventakhir' => $request->dateakhir,
         'deskripsi' => $request->deskripsi,
         'gambar' => $fileName,
         "created_at" =>  \Carbon\Carbon::now(), # \Datetime()
@@ -96,8 +94,6 @@ class EventController extends Controller
         $dataevent = Events::find($request->id);
         $dataevent->juduldeskripsi = $request->juduldeskripsi;
         $dataevent->judulevent = $request->judulevent;
-        $dataevent->tanggalevent = $request->tanggalevent;
-        $dataevent->tanggaleventakhir = $request->tanggaleventakhir;
         $dataevent->deskripsi = $request->deskripsi;
         $dataevent->updated_at = \Carbon\Carbon::now();
         $dataevent->save();
@@ -111,8 +107,6 @@ class EventController extends Controller
         $dataevent = Events::find($request->id);
         $dataevent->juduldeskripsi = $request->juduldeskripsi;
         $dataevent->judulevent = $request->judulevent;
-        $dataevent->tanggalevent = $request->tanggalevent;
-        $dataevent->tanggaleventakhir = $request->tanggaleventakhir;
         $dataevent->deskripsi = $request->deskripsi;
         $dataevent->gambar = $fileName;
         $dataevent->updated_at = \Carbon\Carbon::now();

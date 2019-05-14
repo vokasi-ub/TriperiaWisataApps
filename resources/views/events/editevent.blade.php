@@ -58,17 +58,7 @@
                           <textarea id="textarea1" name="deskripsi" class="materialize-textarea">{{ $editevent->deskripsi }}</textarea>
                           <label for="textarea1">Deskripsi</label>
                         </div>
-                         <div class="input-field col s12">
-                          
-                          <input placeholder="tanggalevent" id="name4" type="date" name="tanggalevent" value="{{ $editevent->tanggalevent }}" class="validate" required>
-                         
-                        </div> 
-
-                         <div class="input-field col s12">
-                          
-                          <input placeholder="tanggaleventakhir" id="name4" type="date" name="tanggaleventakhir" value="{{ $editevent->tanggaleventakhir }}" class="validate" required>
-                         
-                        </div> 
+                  
 
 
                       </div>

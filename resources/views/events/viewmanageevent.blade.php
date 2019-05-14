@@ -68,17 +68,7 @@
                         </div>
                         <input type="hidden" name="created_by" value="{{ Auth::user()->id}}">
 
-                        <div class="input-field col s12">
-                         
-                          <input placeholder="tanggalevent" id="name4" type="date" name="date" class="validate" required>
-                        
-                        </div>
-
-                        <div class="input-field col s12">
-                         
-                          <input placeholder="tanggaleventakhir" id="name4" type="date" name="dateakhir" class="validate" required>
-                        
-                        </div>
+                    
 
 
 
@@ -121,7 +111,6 @@
                             <th>Judul Deskripsi</th>
                             <th>Deskripsi</th>
                             <th>Gambar</th>
-                            <th>Tanggal Event</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -134,8 +123,7 @@
                             <td>{{ $user->judulevent }}</td>
                             <td>{{ $user->juduldeskripsi }}</td>
                             <td>{{ $user->deskripsi }}</td>
-                            <td>{{ $user->gambar }}</td>
-                            <td>{{ $user->tanggalevent }}</td>
+                            <td><img src="/image/{{ $user->gambar }}" height="50px" width="50px" /></td>
 
                             <td><a href="#" data-id="{{$user->eventid}}" class="sa-remove-ev btn-floating red"><i class="mdi-action-delete animated infinite flash"></i></a> <br><br><a href="/editdata/event/{{ $user->eventid }}" class="btn-floating deep-purple"><i class="large mdi-editor-mode-edit animated infinite flash"></i></a></td>
                         </tr>

@@ -70,7 +70,6 @@
           <li class="nav-item "><a href="/" class="nav-link"><i class="fa fa-home"></i> Home</a></li>
           <li class="nav-item"><a href="/frontwisata" class="nav-link"><i class="fa fa-map-o"></i> Wisata</a></li>
           <li class="nav-item"><a href="/menu/event" class="nav-link"><i class="fa fa-calendar"></i> Events</a></li>
-          <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-address-book-o"></i> About</a></li>
           <li class="nav-item"><a href="{{ route('login') }}" class="nav-link"><i class="fa fa-sign-in"></i> Login</a></li>
         </ul>
       </div>
@@ -109,6 +108,8 @@
 								<a class="nav-link active" id="v-pills-whatwedo-tab" data-toggle="pill" href="#v-pills-whatwedo" role="tab" aria-controls="v-pills-whatwedo" aria-selected="true">Pantai</a>
 	
 								<a class="nav-link" id="v-pills-mission-tab" data-toggle="pill" href="#v-pills-mission" role="tab" aria-controls="v-pills-mission" aria-selected="false">Gunung</a>
+
+                <a class="nav-link" id="v-pills-mission-tab" data-toggle="pill" href="#v-pills-lain" role="tab" aria-controls="v-pills-mission" aria-selected="false">Lain-lain</a>
 								
 							
 							</div>
@@ -193,6 +194,42 @@
 	
 											</div>
 										</div>
+                      <div class="tab-pane fade" id="v-pills-lain" role="tabpanel" aria-labelledby="v-pills-mission-tab">
+                    <div class="row">
+                                       @foreach ($lain as $rowlain)
+  
+
+                                            <div class="col-md-4 ftco-animate">
+                          <div class="destination">
+                            <a href="/detail/wisata/{{ $rowlain->wisataid }}">
+                              <img src="/image/{{ $rowlain->gambar}}" width="100%" style="height: 225px;" class="img img-2 d-flex justify-content-center align-items-center">
+      
+                            </a>
+                            
+                            <div class="text p-3">
+                              <div class="d-flex">
+                                <div class="one">
+                                  <h3>{{ $rowlain->namawisata}}</a></h3>
+                                
+                                </div>
+                                
+                              </div>
+                              <p>{{ $rowlain->lokasi}}</p>
+                              <hr>
+                              <p class="bottom-area d-flex">
+                                <span><a href="/detail/wisata/{{ $rowlain->wisataid }}"><button class="btn btn-sm peach-gradient"><i class="fa fa-map-marker"></i> {{ $rowlain->Lokasi->namawilayah}}</button></a></span> 
+                                <span class="ml-auto"><button class="btn btn-sm peach-gradient"><i class="fa fa-search"></i> Lihat Detail</button></span>
+                              </p>
+                            </div>
+
+
+                          </div>
+                        </div>
+
+                                          @endforeach
+  
+                      </div>
+                    </div>
 	
 									
 										
