@@ -248,15 +248,15 @@
             <div class="col-md-12 text-center heading-section heading-section-white ftco-animate">
             <div class="row justify-content-start">
           <div class="col-md-5 heading-section ftco-animate">
-            <span class="subheading">Best Directory Website</span>
-            <h2 class="mb-4 pb-3"><strong>Why</strong> Choose Us?</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.</p>
-            <p><a href="#" class="btn btn-primary btn-outline-primary mt-4 px-4 py-3">Read more</a></p>
+            <span class="subheading">Apa itu kegiatan berwisata</span>
+            <h2 class="mb-4 pb-3"><strong>What</strong> ?</h2>
+            <p>menurut saya adalah segala sesuatu yang terkait dengan kegiatan pariwisata beserta dampaknya yang terjadi karena adanya kontak/interaksi antara pelaku perjalanan wisata dengan daya tarik wisata, sarana penunjang wisata, dan infrastruktur/prasarana yang disediakan oleh masyarakat, swasta, dan pemerintah, dimulai dari tempat tinggal, pada saat di perjalanan, di tempat tujuan, sampai kembali lagi ke tempat tinggalnya.</p>
+           
+            
           </div>
                     <div class="col-md-1"></div>
           <div class="col-md-6 heading-section ftco-animate">
-            <span class="subheading">Testimony</span>
+            <span class="subheading">Testimoni</span>
             <h2 class="mb-4 pb-3"><strong>Our</strong> Guests Says</h2>
             <div class="row ftco-animate">
                   <div class="col-md-12">
@@ -352,7 +352,7 @@
         <div class="row mb-5">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">dirEngine</h2>
+              <h2 class="ftco-heading-2">Triperia Wisata</h2>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>

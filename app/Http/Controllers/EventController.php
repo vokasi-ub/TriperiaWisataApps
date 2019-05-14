@@ -90,36 +90,29 @@ class EventController extends Controller
      */
     public function update(Request $request)
     {
-          
-
- if (empty($request->file('gambar'))){
-        $dataevent = Events::find($request->id);
+        $dataevent = Events::find($request->id); 
         $dataevent->juduldeskripsi = $request->juduldeskripsi;
         $dataevent->judulevent = $request->judulevent;
         $dataevent->startevent = $request->startevent;
         $dataevent->endevent = $request->endevent;
         $dataevent->deskripsi = $request->deskripsi;
         $dataevent->updated_at = \Carbon\Carbon::now();
-        $dataevent->save();
-    }
 
-    else{
+ if (!empty($request->file('gambar'))){
+        
+       
         $file       = $request->file('gambar');
         $fileName   = $file->getClientOriginalName();
         $request->file('gambar')->move("image/", $fileName);
 
-        $dataevent = Events::find($request->id);
-        $dataevent->juduldeskripsi = $request->juduldeskripsi;
-        $dataevent->judulevent = $request->judulevent;
-        $dataevent->startevent = $request->startevent;
-        $dataevent->endevent = $request->endevent;
-        $dataevent->deskripsi = $request->deskripsi;
+       
         $dataevent->gambar = $fileName;
-        $dataevent->updated_at = \Carbon\Carbon::now();
-        $dataevent->save();
+
+        
 
 
     }
+    $dataevent->save();
 
 
       

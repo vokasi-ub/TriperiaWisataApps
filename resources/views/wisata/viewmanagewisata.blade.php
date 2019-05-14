@@ -35,7 +35,7 @@
             
             <!--DataTables example-->
             <div id="table-datatables">
-              <h4 class="header">List Data User</h4>
+              <h4 class="header">List Data Wisata</h4>
              
               <p><a class="waves-effect waves-light btn modal-trigger  light-blue accent-3 animated infinite rubberBand" href="#modal1">Tambah Data</a>
                 </p>
